@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+  }
+
+  /* Formulario */
+  form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  input, button {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  input:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+
+  button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+  /* Tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  thead {
+    background: #007BFF;
+    color: white;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f7f9fc;
+  }
+
+  tbody tr:hover {
+    background-color: #e9f5ff;
+  }
+
+  /* Botones de acción */
+  .actions button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .actions .edit {
+    background: #ffc107;
+    color: white;
+  }
+
+  .actions .delete {
+    background: #dc3545;
+    color: white;
+  }
+
+  .actions button:hover {
+    opacity: 0.8;
+  }

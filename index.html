@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Frontend</title>
+  <link rel="stylesheet" href="syless.css">
+
+</head>
+<body>
+  <h1>CRUD con Node.js </h1>
+  <form id="itemForm">
+    <input type="text" id="itemCode" placeholder="Código del artículo" required>
+    <input type="text" id="itemName" placeholder="Nombre del artículo" required>
+    <input type="text" id="itemPhoto" placeholder="Foto del artículo (URL)" required>
+    <input type="text" id="itemDescription" placeholder="Descripción" required>
+    <input type="number" id="itemQuantity" placeholder="Cantidad disponible" required>
+    <input type="number" id="itemPrice" placeholder="Precio" required>
+    <button type="submit">Agregar</button>
+  </form>
+  <table>
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Foto</th>
+        <th>Descripción</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="itemsTable"></tbody>
+  </table>
+
+  <script src ="funciones.js"></script>
+</body>
+</html>
